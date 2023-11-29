@@ -25,10 +25,10 @@ int main(int argc, char const *argv[])
     int answer[filas][columnas];
 
     // Lleno matriz A y la muestro en pantalla//
-    printf("Matriz A:\n");
+    printf("\nMatriz A:\n");
     for (int i = 0; i < filas; i++)
     {
-        for (int j = 0; i < columnas; j++)
+        for (int j = 0; j < columnas; j++)
         {
             matrizA[i][j] = rand() % 101; // Numeros aleatorios del 0 al 100//
             printf("%d\t", matrizA[i][j]);
@@ -37,16 +37,28 @@ int main(int argc, char const *argv[])
     }
 
     //Lleno la matriz B y la muestro en pantalla//
-    printf("Matriz B:\n");
+    printf("\nMatriz B:\n");
     for (int i = 0; i < filas; i++)
     {
         for (int j = 0; j < columnas; j++)
         {
-            
+            matrizB[i][j] = rand() %101;
+            printf("%d\t", matrizB[i][j]);
         }
-        
+        printf("\n"); //Salto de linea//
+    }
+
+    //Realizo la suma de las 2 matrices y declaro el resultado//
+    printf("La suma de la Matriz A y la matriz B es:\n");
+    for (int i = 0; i < filas; i++)
+    {
+        for (int j = 0; j < columnas; j++)
+        {
+            answer[i][j] = matrizA[i][j] + matrizB[i][j];
+            printf("%d\t", answer[i][j]);
+        }
+        printf("\n");
     }
     
-
     return 0;
 }
