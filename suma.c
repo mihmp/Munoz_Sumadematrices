@@ -28,13 +28,25 @@ int main(int argc, char const *argv[])
     printf("Matriz A:\n");
     for (int i = 0; i < filas; i++)
     {
-        for (int j = 0; i < columnas; i++)
+        for (int j = 0; i < columnas; j++)
         {
             matrizA[i][j] = rand() % 101; // Numeros aleatorios del 0 al 100//
             printf("%d\t", matrizA[i][j]);
         }
         printf("\n"); //Salto de linea//
     }
+
+    //Lleno la matriz B y la muestro en pantalla//
+    printf("Matriz B:\n");
+    for (int i = 0; i < filas; i++)
+    {
+        for (int j = 0; j < columnas; j++)
+        {
+            
+        }
+        
+    }
+    
 
     return 0;
 }
